@@ -1,0 +1,21 @@
+[
+    
+    {"id_marque": 1, "id_categorie": 1, "id_vendeur": 1, "id_type": 1, "id_couleur": 1, "titre": "Stylo bic", "description": "description", "prix": 1, "image": "Stylo"},
+    {"id_marque": 2, "id_categorie": 2, "id_vendeur": 3, "id_type": 5, "id_couleur": 2, "titre": "Regle flexible", "description": "description1", "prix": 2.5, "image": "Regle1"},
+    {"id_marque": 3, "id_categorie": 3, "id_vendeur": 5, "id_type": 2, "id_couleur": 3, "titre": "Ciseaux enfant", "description": "description2", "prix": 1.8, "image": "ciseaux enfant"},
+    {"id_marque": 4, "id_categorie": 4, "id_vendeur": 7, "id_type": 8, "id_couleur": 4, "titre": "Crayon noir", "description": "description3", "prix": 2.5, "image": "crayon-noir"},
+    {"id_marque": 5, "id_categorie": 5, "id_vendeur": 9, "id_type": 1, "id_couleur": 5, "titre": "Gomme", "description": "description4", "prix": 1.2, "image": "Gomme"},
+    {"id_marque": 6, "id_categorie": 6, "id_vendeur": 2, "id_type": 9, "id_couleur": 6, "titre": "Taille-crayon panda", "description": "description5", "prix": 2, "image": "taille-crayon-panda"},
+    {"id_marque": 6, "id_categorie": 6, "id_vendeur": 2, "id_type": 10, "id_couleur": 6, "titre": "Taille-crayon metal", "description": "description51", "prix": 1, "image": "taille-crayon-sans-reservoir"},
+    {"id_marque": 7, "id_categorie": 7, "id_vendeur": 4, "id_type": 12, "id_couleur": 7, "titre": "Cahier rouge", "description": "description6", "prix": 1, "image": "cahier-rouge"},
+    {"id_marque": 8, "id_categorie": 7, "id_vendeur": 5, "id_type": 11, "id_couleur": 7, "titre": "Cahier Jaune", "description": "description61", "prix": 2, "image": "grand-cahier"},
+    {"id_marque": 8, "id_categorie": 8, "id_vendeur": 6, "id_type": 3, "id_couleur": 8, "titre": "Porte-vues noir", "description": "description7", "prix": 4, "image": "Porte-vue noir"},
+    {"id_marque": 9, "id_categorie": 9, "id_vendeur": 8, "id_type": 1, "id_couleur": 9, "titre": "Trousse bleu-clair", "description": "description8", "prix": 4.3, "image": "TrousseBleu"},
+    {"id_marque": 10, "id_categorie": 10, "id_vendeur": 10, "id_type": 12, "id_couleur": 10, "titre": "Cartable rouge", "description": "description9", "prix": 10.6, "image": "cartable-rouge"},
+    {"id_marque": 1, "id_categorie": 1, "id_vendeur": 2, "id_type": 2, "id_couleur": 1, "titre": "Stylo plume", "description": "description10", "prix": 1, "image": "stylo-plume"},
+    {"id_marque": 2, "id_categorie": 2, "id_vendeur": 4, "id_type": 4, "id_couleur": 2, "titre": "Regle 30cm", "description": "description11", "prix": 2.5, "image": "regle-30cm"},
+    {"id_marque": 3, "id_categorie": 3, "id_vendeur": 6, "id_type": 4, "id_couleur": 3, "titre": "Ciseaux noir", "description": "description12", "prix": 3, "image": "ciseaux-noir"},
+    {"id_marque": 4, "id_categorie": 4, "id_vendeur": 8, "id_type": 7, "id_couleur": 4, "titre": "Crayon à papier", "description": "description13", "prix": 0.8, "image": "crayon-papier"},
+    {"id_marque": 5, "id_categorie": 6, "id_vendeur": 10, "id_type": 9, "id_couleur": 5, "titre": "Taille-crayon bleu", "description": "description14", "prix": 1.5, "image": "taille-crayon-bleu"}
+      
+]

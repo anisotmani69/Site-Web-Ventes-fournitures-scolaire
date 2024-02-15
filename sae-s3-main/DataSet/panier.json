@@ -1,0 +1,15 @@
+[
+    {"id_utilisateur":1, "id_article":4},
+    {"id_utilisateur":3, "id_article":8},
+    {"id_utilisateur":4, "id_article":8},
+    {"id_utilisateur":5, "id_article":4},
+    {"id_utilisateur":7, "id_article":2},
+    {"id_utilisateur":10, "id_article":5},
+    {"id_utilisateur":5, "id_article":2},
+    {"id_utilisateur":8, "id_article":3},
+    {"id_utilisateur":8, "id_article":1},
+    {"id_utilisateur":4, "id_article":6},
+    {"id_utilisateur":2, "id_article":7},
+    {"id_utilisateur":3, "id_article":4}
+
+]

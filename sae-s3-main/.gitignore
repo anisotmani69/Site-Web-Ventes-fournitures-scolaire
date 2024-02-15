@@ -1,0 +1,6 @@
+API/.idea
+API/.env
+__pycache__
+factures
+.vscode
+.DS_Store

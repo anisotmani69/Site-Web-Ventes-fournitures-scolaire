@@ -1,0 +1,77 @@
+stages:
+  - test
+  - build
+  - deploy
+
+variables:
+  SECRET_KEY_JWT: "131b1fc44d874833d8e828189c9370475013d5d23bf437dafb6d22ab700efa7c"
+  ALGORITHM: "HS256"
+  ACCESS_TOKEN_EXPIRE_MINUTES: 30
+  SEL: "lescroissantscestsuperbon"
+
+  DOCKER_HOST: tcp://docker:2376
+  DOCKER_TLS_CERTDIR: "/certs"
+
+pytest:
+  stage: test
+  image: python:3.12
+  before_script:
+    - python -m venv venv
+    - source venv/bin/activate
+    - pip install -r API/requirements.txt
+  script:
+    - pytest
+
+#build:
+#  image: docker:20.10.16
+#  stage: build
+#  services:
+#    - docker:dind
+#  variables:
+#    IMAGE_TAG: tang0ch4rlie/apisae:latest
+#  script:
+#    - echo "$ACCESS_TOKEN_DOCKER_HUB" | docker login -u tang0ch4rlie --password-stdin
+#    - docker build -t $IMAGE_TAG ./API/
+#    - docker push $IMAGE_TAG
+
+# build_and_push_docker:
+#   stage: build
+#   image: ubuntu:latest
+#   before_script:
+#     - apt-get update
+#     - apt-get install -y docker.io
+#     - docker --version
+#   script:
+#     - ls -la /builds/p2201616/sae-s3/
+#     - cat /builds/p2201616/sae-s3/Dockerfile
+#     - docker build -t apisae .
+#     - echo "$ACCESS_TOKEN_DOCKER_HUB" | docker login -u tang0ch4rlie --password-stdin
+#     - docker push 
+
+  # script:
+  #   - echo "$ACCESS_TOKEN_DOCKER_HUB" | docker login -u tang0ch4rlie --password-stdin
+  #   - docker info
+  #   - docker buildx create --use
+  #   - docker buildx inspect default
+  #   - docker buildx build --platform darwin/amd64 -t tang0ch4rlie/apisae:latest ./API/
+  #   - docker push tang0ch4rlie/apisae:latest
+
+pages:
+  stage: deploy
+  image: node:latest
+  before_script:
+    - cd front-end
+    - npm install
+    - npm run build 
+  script:
+    - mkdir -p ../.public
+    - cp -r * ../.public
+    - cd ..
+    - mv .public public
+
+  artifacts:
+    paths:
+      - public
+  when: always
+  only:
+    - main

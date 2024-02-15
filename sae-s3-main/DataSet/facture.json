@@ -1,0 +1,13 @@
+[
+    
+    {"id_utilisateur":"1", "date_facture":"01/01/2023"},
+    {"id_utilisateur":"1", "date_facture":"02/04/2023"},
+    {"id_utilisateur":"3", "date_facture":"03/01/2023"},
+    {"id_utilisateur":"4", "date_facture":"05/01/2023"},
+    {"id_utilisateur":"1", "date_facture":"06/01/2023"},
+    {"id_utilisateur":"7", "date_facture":"08/01/2023"},
+    {"id_utilisateur":"7", "date_facture":"08/01/2023"},
+    {"id_utilisateur":"1", "date_facture":"09/01/2023"},
+    {"id_utilisateur":"7", "date_facture":"08/01/2023"}
+
+]
